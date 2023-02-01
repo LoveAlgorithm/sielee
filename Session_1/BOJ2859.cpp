@@ -1,39 +1,27 @@
-#include <iostream>
-using namespace std;
 
-typedef struct s_time
-{
-	int h;
-	int m;
-}	t_time;
+// #include <iostream>
+// using namespace std;
 
-typedef struct s_star
-{
-	t_time tm_twinkle;
-	t_time tm_interval;
-}	t_star;
+// int calc(int a, int b)
+// {
+// 	int min = (a > b ? b : a);
 
-int main(void)
-{
-	t_star star[2];
+// 	for(int i = min; i > 0; i--)
+// 	{
+// 		if (a % i == 0 && b % i == 0)
+// 			return (i);
+// 	}
+// 	return (1);
+// }
 
-	for (int i = 0; i < 2; i++)
-	{
-		cin >> star[i].tm_twinkle.h;
-		cin.ignore(5,':');
-		cin >> star[i].tm_twinkle.m;
-	}
-	for (int i = 0; i < 2; i++)
-	{
-		cin >> star[i].tm_interval.h;
-		cin.ignore(5,':');
-		cin >> star[i].tm_interval.m;
-	}
-
-	for (int i = 0; i < 2; i++)
-	{
-		cout << star[i].tm_twinkle.h << ":" << star[i].tm_twinkle.m << endl;
-		cout << star[i].tm_interval.h << ":" << star[i].tm_interval.m << endl;
-	}
-
-}
+// int main(void)
+// {
+// 	int n, a, b;
+// 	cin >> n;
+// 	for (int i = 0; i < n; i++)
+// 	{
+// 		cin >> a >> b;
+// 		cout << a * b / calc(a, b) << "\n";
+// 	}
+// 	return (0);
+// }
