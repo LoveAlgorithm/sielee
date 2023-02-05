@@ -41,18 +41,19 @@ int main(void)
 	long y;
 	cin >> y;
 
-	for (long x = 1; x < 10; x++)
+	for (long x = 1; x < 130; x+=10)
 	{
-		if (f(x) == y)
-		{
-			cout << x;
-			return 0;
-		}
-		else if (f(x) > y)
-		{
-			res(y, (x - 1) + 1e1, (x - 1) + 1e2);
-			return 0;
-		}
+		cout << "x: " << x << " f(x): " << f(x) << endl;
+		// if (f(x) == y)
+		// {
+		// 	cout << x;
+		// 	return 0;
+		// }
+		// else if (f(x) > y)
+		// {
+		// 	res(y, (x - 1) + 1e1, (x - 1) + 1e2);
+		// 	return 0;
+		// }
 	}
 	return 0;
 }
